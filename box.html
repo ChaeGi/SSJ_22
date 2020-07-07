@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOX</title>
+        <style>
+            /*
+            전체를 쓰는 블럭 태그 [block level element]
+            */
+            h1 {
+                border-width: 5px;
+                border-color: red;
+                border-style: solid;
+                display: block;
+                width: 60px;
+            }
+            /*
+            부분만 쓰는 블럭 태그 [inline element]
+            */
+            a {
+                border-width: 5px;
+                border-color: red;
+                border-style: solid;
+            }
+            
+            /*
+            위에 중복 되는 h1 과 a 를 밑에를 통해 간단하게
+            정리한 모습
+            */
+            h1, a {
+                border:5px solid red;
+            }
+            /*
+            inline 자기의 영역만 사용
+            block 전체의 영역을 사용
+            padding 박스 사이의 간격을 조절
+            margin 박스 테두리 간의 간격을 조절
+            
+            display: block; 세
+            width           트 인거 같으며 width으로 박스의
+                               전체 크기 조절이 가능함
+            */
+            h2 {
+                border-width: 5px;
+                border-color: red;
+                border-style: solid;
+                display: inline;
+                padding: 10px;
+                margin: 10px;
+                display: block;
+                width: 60px;
+            }
+            /*
+            display 설정을 none 으로 하면 그의
+            해당하는 것을 안보이게 할 수 있음
+            */
+            h3 {
+                border-width: 5px;
+                border-color: red;
+                border-style: solid;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <h2>CSS2</h2>
+        <h2>2SSC</h2>
+        <h3>제작자 바보</h3>
+        <br><br>
+        Cascading Style Sheets (<a href="https://namu.wiki/w/CSS">CSS</a>) is a style sheet language
+        used for describing the presentation of a document
+        written in a markup language.
+    </body>
+</html>
